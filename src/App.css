@@ -40,8 +40,7 @@
   
   .todo-input {
     padding: 14px 32px 14px 16px;
-    border-radius: 4px 0 0 4px;
-    border: 2px solid rgb(119, 172, 241);
+    border: 2px solid rgb(255, 255, 255);
     outline: none;
     width: 320px;
     background: transparent;
@@ -55,11 +54,10 @@
   .todo-button {
     padding: 16px;
     border: none;
-    border-radius: 0 4px 4px 0;
     cursor: pointer;
     outline: none;
-    background: rgb(119, 172, 241) 100%;
-    color: #fff;
+    background: rgb(255, 255, 255) 100%;
+    color: rgb(102, 193, 239);
     text-transform: capitalize;
   }
   
@@ -70,6 +68,7 @@
   .todo-button.edit {
     background: rgb(119, 172, 241) 100%;
     padding: 16px 22px;
+    color: #e2e2e2;
   }
   
   .todo-container {
@@ -84,15 +83,9 @@
     align-items: center;
     margin: 4px auto;
     color: #fff;
-    background: #149fff;
-  
+    background: #374c5c;
     padding: 16px;
-    border-radius: 5px;
     width: 90%;
-  }
-  
-  .todo-row:nth-child(2n) {
-    background: #60bbfc;
   }
   
   .icons {
@@ -109,4 +102,23 @@
   
   .edit-icon {
     color: #fff;
+  }
+
+  @media screen and (max-width: 768px){
+    
+    .todo-app {
+      max-width: 90%;
+      height: 90vh;
+      margin-top: 5vh;
+      
+    }
+
+    .todo-input {
+      width: 80%;
+    }
+
+    .todo-input.edit {
+      width: 60%;
+    }
+    
   }
